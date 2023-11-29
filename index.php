@@ -48,6 +48,7 @@
                 </div> -->
 
                 <?php foreach ($characters as $character) : ?>
+                    
                     <div class="col-3 mb-3">
                         <div class="card shadow-lg ">
                             <img src="./avatars/<?= $character['avatar'] ?>" class="card-img-top" alt="...">
@@ -70,6 +71,7 @@
                             </div>
                         </div>
                     </div>
+
                 <?php endforeach ?>
             </div>
         </div>

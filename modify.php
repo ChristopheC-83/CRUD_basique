@@ -12,7 +12,7 @@
 
 <body class="d-flex flex-column min-vh-100 roboto-font bg-light">
 
-     <div class="content flex-grow-1 d-flex flex-column">
+    <div class="content flex-grow-1 d-flex flex-column">
         <?php include_once "./utilities/utilities.php"  ?>
         <?php include_once "./components/navbar.php"  ?>
 
@@ -29,11 +29,14 @@
         <div class=" flex-grow-1 d-flex container">
             <div class="row container w-100">
                 <form class="w-75 mx-auto" action="./utilities/update.php" method="POST">
+
                     <input type="hidden" name="id" value=<?= $id ?>>
+
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?= $character['name'] ?>">
                     </div>
+
                     <div class="mb-3">
                         <label for="type" class="form-label">Type</label>
                         <select class="form-select form-select-lg mb-3" name='type' id='type'>
@@ -43,6 +46,7 @@
                         </select>
                     </div>
                     <div class="mb-3">
+                        
                         <label for="people" class="form-label">Race</label>
                         <select class="form-select form-select-lg mb-3" name='people' id='people'>
                             <?php foreach ($people as $race) : ?>

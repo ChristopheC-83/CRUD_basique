@@ -21,8 +21,8 @@
         <?php
         $types = getTypes();
         $people = getRaces();
-        // showArray($types);
-        // showArray($people);
+        showArray($types);
+        showArray($people);
         ?>
 
 
